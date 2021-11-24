@@ -49,6 +49,10 @@
   cursor: auto;
 }
 
+.calc-screen:hover {
+  background-color: #282c34;
+}
+
 .calc-zero {
   grid-column: 1 / span 2;
 }
