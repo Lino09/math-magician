@@ -1,6 +1,6 @@
+/* eslint-disable */
 import React, { Component } from 'react';
 
-/* eslint-disable */
 export default class Calculator extends Component {
   render() {
     return (
