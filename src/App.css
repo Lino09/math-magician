@@ -1,3 +1,8 @@
+@font-face {
+  font-family: baseCalc;
+  src: url(./assets/fonts/Calculator.ttf);
+}
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -20,8 +25,9 @@
   width: 100%;
   max-width: 800px;
   margin: 128px 0;
-  gap: 6px;
+  gap: 12px;
   background-color: lightgray;
+  padding: 24px;
 }
 
 .calc * {
@@ -32,13 +38,23 @@
   border: none;
   background-color: #f8eeee;
   border-radius: 5px;
+  box-shadow: 1px 1px 3px 0 rgb(0, 0, 0),
+  inset 1px 1px 2px 1px white;
 }
 
 .calc *:hover {
-  background-color: #e2e2f8;
+  background-color: #e9e3e3;
+}
+
+.calc *:active {
+  box-shadow: inset 1px 1px 5px 0 black,
+  inset -1px -1px 5px 2px white;
 }
 
 .calc-screen {
+  font-family: 'baseCalc', monospace;
+  color: #adff2f;
+  text-shadow: 0 0 5px greenyellow;
   grid-column: 1 / span 4;
   width: 100%;
   text-align: end;
@@ -47,10 +63,21 @@
   font-weight: 400;
   background-color: #282c34;
   cursor: auto;
+  box-shadow: none;
+  user-select: none;
+}
+
+.calc-screen:active {
+  box-shadow: none;
 }
 
 .calc-screen:hover {
   background-color: #282c34;
+}
+
+.calc-operation:active {
+  box-shadow: inset 1px 1px 5px 0 hsl(39, 100%, 15%),
+  inset -1px -1px 8px 1px hsl(39, 100%, 75%);
 }
 
 .calc-zero {
@@ -58,9 +85,11 @@
 }
 
 .calc-operation {
-  background-color: orange;
+  box-shadow: 1px 1px 3px 0 rgb(0, 0, 0),
+  inset 1px 1px 3px 1px hsl(39, 100%, 80%);
+  background-color: rgb(255, 182, 47);
 }
 
 .calc-operation:hover {
-  background-color: rgb(255, 136, 0);
+  background-color: rgb(255, 166, 0)
 }
