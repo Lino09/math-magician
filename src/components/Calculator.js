@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
+const initial = {
+  total: '0',
+};
+
 const Calculator = () => {
-  const [obj, setObj] = useState(0);
+  const [obj, setObj] = useState(initial);
   const onButtonPress = (obj, btnInfo) => {
     const newObj = calculate(obj, btnInfo);
     if (!newObj.next && !newObj.total) {
