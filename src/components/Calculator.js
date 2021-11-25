@@ -35,7 +35,7 @@ const Calculator = () => {
       <button onClick={() => onButtonPress(obj, '-')} type="button" className="calc-operation">-</button>
       <button onClick={() => onButtonPress(obj, '1')} type="button" className="calc-num">1</button>
       <button onClick={() => onButtonPress(obj, '2')} type="button" className="calc-num">2</button>
-      <button onClick={() => onButtonPress(obj, '4')} type="button" className="calc-num">3</button>
+      <button onClick={() => onButtonPress(obj, '3')} type="button" className="calc-num">3</button>
       <button onClick={() => onButtonPress(obj, '+')} type="button" className="calc-operation">+</button>
       <button onClick={() => onButtonPress(obj, '0')} type="button" className="calc-num calc-zero">0</button>
       <button onClick={() => onButtonPress(obj, '.')} type="button">.</button>
