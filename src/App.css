@@ -31,6 +31,7 @@
   cursor: pointer;
   border: none;
   background-color: #f8eeee;
+  border-radius: 5px;
 }
 
 .calc *:hover {
