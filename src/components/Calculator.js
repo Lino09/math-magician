@@ -10,7 +10,7 @@ const Calculator = () => {
   const onButtonPress = (obj, btnInfo) => {
     const newObj = calculate(obj, btnInfo);
     if (!newObj.next && !newObj.total) {
-      newObj.next = 0;
+      newObj.next = '0';
     }
     setObj(newObj);
   };
