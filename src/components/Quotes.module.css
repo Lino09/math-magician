@@ -1,0 +1,14 @@
+.quote {
+  max-width: 1200px;
+}
+
+.block {
+  font-size: 48px;
+  margin-top: 60px;
+  font-weight: 800;
+  color: gray;
+}
+
+.author {
+  font-size: 20px;
+}
