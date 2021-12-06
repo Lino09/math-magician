@@ -15,6 +15,8 @@ Additional description about the project and its features.
 ## Live Demo
 
 [Live Demo Link](https://lino09.github.io/math-magician/build/)
+[Heroku](https://abel-the-math-magician.herokuapp.com/)
+[Netlify](https://abel-math-magician.netlify.app/)
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
